@@ -1,0 +1,123 @@
+
+@import "@ionic/angular/css/core.css";
+
+
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+$header : 32px;
+$pfont : 16px;
+$bold: 600;
+$pcolor: #FFFFFF99;
+$red: #DF2E38;
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Light.ttf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Black.ttf);
+    font-weight: 900;
+  }
+
+ion-header{
+    padding-top: 10px;
+    ion-toolbar{
+        --background: #0000;
+        color: #fff;
+        --border-style: none;
+        padding: 10px 24px 0;
+    }
+}
+ion-content{
+    --ion-background-color: #0000;
+}
+.logo{
+    width: 6.25rem;
+}
+.text-header{
+    font-size: $header;
+    font-weight: $bold;
+    color: #fff;
+}
+.reg-text{
+    font-size: $pfont;
+    color: $pcolor;
+}
+
+ion-button{
+    color: $red;
+    font-weight: 700;
+    --background: none;
+    margin-bottom: $pfont;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    
+    &.btn{
+        color: #fff;
+        --background: #DF2E38;
+        --background-activated: #b6252c;
+    }
+}
+
+swiper-container{
+    --swiper-pagination-color: #DF2E38 !important;
+    --swiper-pagination-bullet-inactive-color: #7e7e7e !important;
+    --swiper-pagination-bullet-width: 10px !important;
+    --swiper-pagination-bullet-height: 10px !important;
+
+  .swiper-pagination-bullet-active {
+	--swiper-pagination-bullet-width: 24px !important;
+    --swiper-pagination-bullet-border-radius: 28% !important;
+  }
+    &::part(container) {
+        overflow: unset!important;
+    }
+}
+swiper-container::part(pagination) {
+    position: absolute;
+    top: unset;
+    bottom: -24px;
+    // bottom: -24px!important;
+}
+.header, .header-btns{
+    ion-button{
+        margin-bottom: 0;
+        --padding-top: 0;
+        --padding-bottom: 0;
+        --padding-start: 0;
+        --padding-end: 0;
+    }
+}
+.header-btns{
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
