@@ -1,23 +1,211 @@
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar>
-    <div class="header">
-      <div>
-        <ion-button fill="clear">
-          <img src="./assets/images/user.png" width="48" height="48">
-        </ion-button>
-      </div>
-      <div class="header-btns">
-        <ion-button fill="clear" style="margin-right: 16px;"><img src="./assets/icon/bell.svg" alt=""></ion-button>
-        <ion-button fill="clear"><img src="./assets/icon/message.svg" alt=""></ion-button>
-      </div>
-    </div>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" class="ion-padding-horizontal">
+  <ion-header [translucent]="true" class="ion-no-border">
+    <ion-toolbar>
+      <div class="header">
+        <div>
+          <ion-button fill="clear">
+            <img src="./assets/images/user.png" width="48" height="48">
+          </ion-button>
+        </div>
+        <div class="header-btns">
+          <ion-button fill="clear" style="margin-right: 16px;"><img src="./assets/icon/bell.svg" alt=""></ion-button>
+          <ion-button fill="clear"><img src="./assets/icon/message.svg" alt=""></ion-button>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
   <div class="feat header-btns">
     <div class="feat-txt">
       Featured Bands
+    </div>
+    <div>
+      <ion-button fill="clear">See All</ion-button>
+    </div>
+  </div>
+
+  <swiper-container class="" pagination="true" pagination-clickable="true" slides-per-view="auto"
+  centered-slides="true" space-between="30" css-mode="true">
+    <swiper-slide>
+      <div class="home-img">
+        <img src="./assets/images/pilot-bg.svg">
+        <p>Avalanche Pilot</p>
+      </div>
+      <div class="swiper-text">
+        Avalanche Pilot
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="home-img">
+        <img src="./assets/images/pilot-bg.svg">
+        <p>Crimson Riot</p>
+      </div>
+      <div class="swiper-text">
+        Crimson Riot
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="home-img">
+        <img src="./assets/images/pilot-bg.svg">
+        <p>Midnight Vortex</p>
+      </div>
+      <div class="swiper-text">
+        Midnight Vortex
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="home-img">
+        <img src="./assets/images/pilot-bg.svg">
+        <p>Electric Serpent</p>
+      </div>
+      <div class="swiper-text">
+        Electric Serpent
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="home-img">
+        <img src="./assets/images/pilot-bg.svg">
+        <p>Thunder Symphony</p>
+      </div>
+      <div class="swiper-text">
+        Thunder Symphony
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <div class="feat header-btns">
+    <div class="feat-txt">
+      New Arrivals
+    </div>
+    <div>
+      <ion-button fill="clear">See All</ion-button>
+    </div>
+  </div>
+
+  <div class="arrivals">
+    <swiper-container class="" pagination="true" pagination-clickable="true" slides-per-view="auto"
+    centered-slides="true" space-between="20" css-mode="true">
+    <swiper-slide>
+      <div class="card">
+        <div class="top">
+          <img src="./assets/images/shirt1.svg" alt="">
+        </div>
+        <div class="bot">
+          <div>Punk Rock T-Shirt</div>
+          <div class="sub-text">Get in touch with your emotions and showcase your love for...</div>
+          <div class="rating"></div>
+          <div class="cart">
+            <p>₱ 249.00</p>
+            <ion-button class="btn cart-btn" shape="round">
+              <img src="./assets/icon/shopping-cart.svg" alt="">
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="card">
+        <div class="top">
+          <img src="./assets/images/shirt2.svg" alt="">
+        </div>
+        <div class="bot">
+          <div>Emo Rock Music Shirt</div>
+          <div class="sub-text">Illuminate your style and share your passion for rock band...</div>
+          <div class="rating"></div>
+          <div class="cart">
+            <p>₱ 499.00</p>
+            <ion-button class="btn cart-btn" shape="round">
+              <img src="./assets/icon/shopping-cart.svg" alt="">
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="card">
+        <div class="top">
+          <img src="./assets/images/shirt3.svg" alt="">
+        </div>
+        <div class="bot">
+          <div>Rock Band Silhouette</div>
+          <div class="sub-text">Get in touch with your emotions and showcase your love for...</div>
+          <div class="rating">
+            <!-- <ul class="list-inline rating-star" *ngFor="let star of stars; let i= index">
+              <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)" (mouseout)="removeClass()"><span class="icons"><ion-icon></ion-icon></span></li>
+            </ul> -->
+          </div>
+          <div class="cart">
+            <p>₱ 399.00</p>
+            <ion-button class="btn cart-btn" shape="round">
+              <img src="./assets/icon/shopping-cart.svg" alt="">
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="card">
+        <div class="top">
+          <img src="./assets/images/shirt4.svg" alt="">
+        </div>
+        <div class="bot">
+          <div>Rock City T-Shirt</div>
+          <div class="sub-text">Get in touch with your emotions and showcase your love for...</div>
+          <div class="rating"></div>
+          <div class="cart">
+            <p>₱ 349.00</p>
+            <ion-button class="btn cart-btn" shape="round">
+              <img src="./assets/icon/shopping-cart.svg" alt="">
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="card">
+        <div class="top">
+          <img src="./assets/images/shirt5.svg" alt="">
+        </div>
+        <div class="bot">
+          <div>Ramones Logo Shirt</div>
+          <div class="sub-text">Get in touch with your emotions and showcase your love for...</div>
+          <div class="rating"></div>
+          <div class="cart">
+            <p>₱ 400.00</p>
+            <ion-button class="btn cart-btn" shape="round">
+              <img src="./assets/icon/shopping-cart.svg" alt="">
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div class="feat header-btns">
+    <div class="feat-txt">
+      Flash Deal
+    </div>
+  </div>
+
+  <div class="flash-deal">
+    <div class="left">
+      <img src="./assets/images/shirt1.svg" alt="">
+    </div>
+    <div class="right">
+      <div>50% Off</div>
+      <div>Simple Words Trendy Design T-shirt</div>
+      <div class="rating"></div>
+      <div class="pricing">
+        <div>₱̶ 1̶2̶5̶.̶0̶0̶</div>
+        <div>₱ 125.00</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat header-btns">
+    <div class="feat-txt">
+      Sample Products
     </div>
     <div>
       <ion-button fill="clear">See All</ion-button>

@@ -44,14 +44,16 @@ $red: #DF2E38;
     src: url(./assets/fonts/Roboto/Roboto-Black.ttf);
     font-weight: 900;
   }
-
+.header-background{
+    backdrop-filter: none !important;
+}
 ion-header{
     padding-top: 10px;
     ion-toolbar{
         --background: #0000;
         color: #fff;
         --border-style: none;
-        padding: 10px 24px 0;
+        // padding: 10px 24px 0;
     }
 }
 ion-content{
@@ -91,10 +93,6 @@ swiper-container{
     --swiper-pagination-bullet-width: 10px !important;
     --swiper-pagination-bullet-height: 10px !important;
 
-  .swiper-pagination-bullet-active {
-	--swiper-pagination-bullet-width: 24px !important;
-    --swiper-pagination-bullet-border-radius: 28% !important;
-  }
     &::part(container) {
         overflow: unset!important;
     }
@@ -105,19 +103,31 @@ swiper-container::part(pagination) {
     bottom: -24px;
     // bottom: -24px!important;
 }
-.header, .header-btns{
-    ion-button{
-        margin-bottom: 0;
-        --padding-top: 0;
-        --padding-bottom: 0;
-        --padding-start: 0;
-        --padding-end: 0;
-    }
-}
+swiper-container::part(bullet-active) {
+    width: 24px;
+    border-radius: 20px;
+  }
+// .header, .header-btns{
+//     ion-button{
+//         margin-bottom: 0;
+//         --padding-top: 0;
+//         --padding-bottom: 0;
+//         --padding-start: 0;
+//         --padding-end: 0;
+//     }
+// }
 .header-btns{
     display: flex;
 }
 .header{
     display: flex;
     justify-content: space-between;
+}
+
+ion-button{
+    margin-bottom: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
 }

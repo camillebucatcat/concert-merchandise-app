@@ -3,5 +3,43 @@ ion-content{
     
     .logo-loading{
         display: inline;
+        position: relative;
+        z-index: -1;
     }
 }
+.circle{
+    position: absolute;
+    // width: ;
+    z-index: 1;
+    background: #000;
+    animation: scale 2s ease-in-out forwards;
+    animation-delay: 3s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+@keyframes scale {
+    0% {
+        opacity: 1;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+//   @keyframes scale {
+//     0% {
+//       -webkit-transform: scale(0.5);
+//               transform: scale(0.5);
+//     }
+//     100% {
+//       -webkit-transform: scale(1);
+//               transform: scale(1);
+//     }
+//   }

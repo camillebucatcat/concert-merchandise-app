@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'featured-band',
+    loadChildren: () => import('./pages/featured-band/featured-band.module').then( m => m.FeaturedBandPageModule)
+  },
 ];
 
 @NgModule({
