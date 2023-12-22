@@ -62,7 +62,7 @@ ion-content{
     --ion-background-color: #0000;
     --padding-start: 24px !important;
     --padding-end: 24px !important;
-    --padding-top: 32px !important;
+    --padding-top: 32px;
 }
 .logo{
     width: 6.25rem;
@@ -275,7 +275,7 @@ ion-item{
 }
 .rating{
     display: flex;
-    margin: 8px 0 24px 0;
+    margin: 4px 0;
     gap: 8px;
     .star{
         display: grid;

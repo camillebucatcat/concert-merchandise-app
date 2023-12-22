@@ -1,4 +1,10 @@
-
+ion-content{
+    --padding-top: 0 !important;
+    --padding-end: 0 !important;
+}
+.pr{
+    padding-right: 24px;
+}
 .ion-padding-horizontal{
     --padding-start: 1.5rem;
     --padding-end: 1.5rem;
@@ -8,6 +14,7 @@
     justify-content: space-between;
     color: #fff;
     margin-bottom: 12px;
+    padding-right: 24px;
 
     ion-button{
         font-size: .875rem;
@@ -132,3 +139,4 @@ swiper-slide{
         }
     }
 }
+
