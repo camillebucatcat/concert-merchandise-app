@@ -1,0 +1,36 @@
+ion-content{
+    position: relative;
+    --background: #fff;
+    ion-toolbar{
+        div{
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+.center-img{
+    display: flex;
+    justify-content: center;
+}
+.confirm-content{
+    display: grid;
+    align-content: center;
+    height: -webkit-fill-available;
+}
+.confirm-txt{
+    text-align: center;
+    line-height: 24px;
+     .txt{
+        color: #DF2E38;
+        font-size: 2.1362rem;
+        font-weight: 700;
+        margin-bottom: .5rem;
+     }
+     .txt-1{
+        font-size: 14px;
+     }
+}
+
+.btn{
+    margin-bottom: 24px;
+}

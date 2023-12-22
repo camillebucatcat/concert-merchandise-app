@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'featured-band',
     loadChildren: () => import('./pages/featured-band/featured-band.module').then( m => m.FeaturedBandPageModule)
   },
+  {
+    path: 'order-confirm',
+    loadChildren: () => import('./pages/order-confirm/order-confirm.module').then( m => m.OrderConfirmPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'order-status',
+    loadChildren: () => import('./pages/order-status/order-status.module').then( m => m.OrderStatusPageModule)
+  },
 ];
 
 @NgModule({

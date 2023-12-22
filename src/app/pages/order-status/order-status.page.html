@@ -1,0 +1,56 @@
+<ion-header [translucent]="true" class="ion-padding-horizontal">
+  <ion-toolbar>
+      <img src="./assets/icon/arrow-left.svg" alt="">
+      <ion-title>Order Status</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="note">
+    <span>Note: </span>Pending products are products that can <br> be cancelled within 30 minutes after placing the order.
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" class="blk-btn">
+          <ion-badge>2</ion-badge>
+          <div>
+            <img src="./assets/icon/clock-light.svg" alt="">
+            <ion-label>Pending</ion-label>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" class="blk-btn">
+          <ion-badge>2</ion-badge>
+          <div>
+            <img src="./assets/icon/package.svg" alt="">
+            <ion-label>Preparing</ion-label>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" class="blk-btn">
+          <ion-badge>1</ion-badge>
+          <div>
+            <img src="./assets/icon/truck.svg" alt="">
+            <ion-label>For Delivery</ion-label>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" class="blk-btn">
+          <ion-badge>4</ion-badge>
+          <div>
+            <img src="./assets/icon/received.svg" alt="">
+            <ion-label>Received</ion-label>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

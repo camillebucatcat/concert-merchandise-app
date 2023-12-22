@@ -9,37 +9,29 @@ ion-content{
 }
 .circle{
     position: absolute;
-    // width: ;
     z-index: 1;
+    transform: scale(0.5);
     background: #000;
-    animation: scale 2s ease-in-out forwards;
-    animation-delay: 3s;
+    animation: scale 2s ease forwards;
+    animation-delay: 4s;
+    border-radius: 50%;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: -284px;
     right: 0;
     margin: auto;
     opacity: 0;
+    overflow: hidden;
+    width: 1000px;
+    height: 1000px;
 }
 @keyframes scale {
-    0% {
+    0%{
         opacity: 1;
-      -webkit-transform: scale(0);
-              transform: scale(0);
+        transform: scale(0);
     }
-    100% {
+    100%{
         opacity: 1;
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        transform: scale(1);
     }
   }
-//   @keyframes scale {
-//     0% {
-//       -webkit-transform: scale(0.5);
-//               transform: scale(0.5);
-//     }
-//     100% {
-//       -webkit-transform: scale(1);
-//               transform: scale(1);
-//     }
-//   }

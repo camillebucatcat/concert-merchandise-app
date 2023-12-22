@@ -1,0 +1,66 @@
+
+
+<ion-content [fullscreen]="true" class="">
+  <div class="top">
+    <div class="header">
+      <div>
+        <ion-button fill="clear">
+          <img src="./assets/icon/arrow-left.svg" alt="">
+        </ion-button>
+      </div>
+      <div class="header-txt">
+        Profile
+      </div>
+      <div>
+        <ion-button fill="clear">
+          <img src="./assets/icon/settings.svg" alt="">
+        </ion-button>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="pfp">
+        <img src="./assets/images/user-home.svg" width="92" height="92" alt="">
+      </div>
+      <div class="user-details">
+        <div class="username">James Del Rosario</div>
+        <div class="email">james_delrosariogmail.com</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding">
+    <ion-item [button]="true" lines="none">
+        <img src="./assets/icon/user.svg" alt="">
+      <ion-label>Account</ion-label>
+    </ion-item>
+    <ion-item [button]="true" lines="none">
+      <img src="./assets/icon/credit-card.svg" alt="">
+    <ion-label>Manage Payment Method</ion-label>
+    </ion-item>
+    <ion-item [button]="true" lines="none">
+      <img src="./assets/icon/clock.svg" alt="">
+    <ion-label>Purchase History</ion-label>
+    </ion-item>
+    <ion-item [button]="true" lines="none">
+      <img src="./assets/icon/map.svg" alt="">
+    <ion-label>Order Status</ion-label>
+    </ion-item>
+  </div>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <img src="./assets/icon/home.svg" alt="">
+        Home
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <img src="./assets/icon/search.svg" alt="">
+        Search
+      </ion-tab-button>
+      <ion-tab-button tab="cart">
+        <img src="./assets/icon/shopping-cart-grey.svg" alt="">
+        Cart
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
