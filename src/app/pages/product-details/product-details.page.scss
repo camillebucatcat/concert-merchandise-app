@@ -27,6 +27,8 @@ ion-item{
 }
 
 .reviews{
+    margin: 8px 0;
+    display: flex;
     margin-bottom: .5rem;
 }
 .sub-text{
@@ -35,4 +37,12 @@ ion-item{
 }
 .col-price{
     font-size: 20px !important;
+}
+
+.rating{
+    margin: 0 19px 0 0;
+}
+.midtxt{
+    display: grid;
+    align-content: center;
 }

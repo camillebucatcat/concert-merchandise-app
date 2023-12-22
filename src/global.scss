@@ -273,3 +273,12 @@ ion-item{
         }
     } 
 }
+.rating{
+    display: flex;
+    margin: 8px 0 24px 0;
+    gap: 8px;
+    .star{
+        display: grid;
+        align-content: center;
+    }
+}
