@@ -17,6 +17,8 @@ $header : 32px;
 $pfont : 16px;
 $bold: 600;
 $pcolor: #FFFFFF99;
+$txtprimary : #FFFFFFDE;
+$lh: 24px;
 $red: #DF2E38;
 
 @font-face {
@@ -68,11 +70,13 @@ ion-content{
 .text-header{
     font-size: $header;
     font-weight: $bold;
-    color: #fff;
+    color: $txtprimary;
 }
 .reg-text{
+    margin-top: 8px;
     font-size: $pfont;
     color: $pcolor;
+    line-height: $lh;
 }
 
 ion-button{
@@ -105,6 +109,15 @@ ion-button{
                 margin: auto;
             }
         }
+    }
+    &.btn-white{
+        min-width: 48px;
+        --background: #fff;
+        --background-activated: #a3a3a3;
+        img{
+            width: 1.125rem;
+        }
+        
     }
 }
 
@@ -159,7 +172,7 @@ ion-grid, ion-row{
     gap: 8px;
 }
 .sub-text{
-    font-size: .75rem;
+    font-size: .75rem !important;
     font-weight: 400;
     color: #FFFFFF99;
     line-height: 24px;
@@ -200,4 +213,63 @@ ion-badge{
     right: 12px;
     padding: 8px 11px;
     border-radius: 70px;
+}
+ion-item{
+    color: #FFFFFFDE;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background: #1e1e1e;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    --color-activated: #fff;
+    img{
+        margin-right: 1rem;
+    }
+}
+.product-txt{
+    color: $txtprimary;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.midtxt{
+    font-size: 14px;
+    color: #FFFFFFDE;
+    line-height: 1.5rem;
+    font-weight: 400;
+
+    &.note{
+        margin-bottom: 2rem;
+        text-align: justify;
+        span{
+            font-weight: 700;
+        }
+    }
+
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    
+    p{
+        display: grid;
+        align-content: center;
+    }
+    &.col-price{
+        font-size: 14px !important;
+        font-weight: 700;
+    }
+    .col-btn{
+        img{
+            margin: 0.9rem !important;
+        }
+    }
+    .cart-btn{
+        // border-radius: 50%;
+        img{
+            margin: 15px;
+            width: 20px;
+        }
+    } 
 }

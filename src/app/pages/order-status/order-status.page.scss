@@ -9,22 +9,10 @@ ion-toolbar{
     }
 }
 
-.note{
-    color: #FFFFFFDE;
-    font-size: 14px;
-    line-height: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    text-align: justify;
-    span{
-        font-weight: 700;
-    }
-}
-
 ion-button{
     position: relative;
 }
 
 ion-grid, ion-row{
-    gap: 22px !important;
+    gap: 12px !important;
 }

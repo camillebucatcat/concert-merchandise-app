@@ -1,0 +1,38 @@
+ion-header{
+    background: #6c6c6c;
+}
+ion-toolbar{
+    background: url(/../assets/images/shirt1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 30vh;
+    background-size: 210px;
+    padding: 0 24px;
+
+    .header{
+        margin-top: 32px;
+    }
+}
+
+ion-item{
+    background: none !important;
+    --inner-padding-bottom: 16px;
+    --border-color: #FFFFFF1F;
+    padding: 0 !important; 
+    margin-bottom: 32px !important;
+    --padding-start: 0 !important;
+    img{
+        border-radius: 100px;
+    }
+}
+
+.reviews{
+    margin-bottom: .5rem;
+}
+.sub-text{
+    color: #777777 !important;
+    margin-top: 0 !important;
+}
+.col-price{
+    font-size: 20px !important;
+}
