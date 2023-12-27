@@ -1,0 +1,26 @@
+.flash-deal{
+    margin-bottom: 1rem !important;
+}
+.note{
+    text-align: center !important;
+}
+p{
+    align-content: end !important;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.cart{
+    margin-top: 35px;
+
+    ion-button{
+        img{
+            margin: 0 !important;
+            width: auto !important;
+        }
+        min-height: 32px !important;
+        width: 34px;
+    }
+}
+.total{
+    margin-top: 64px;
+}
