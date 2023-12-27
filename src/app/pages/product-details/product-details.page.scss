@@ -38,11 +38,47 @@ ion-item{
 .col-price{
     font-size: 20px !important;
 }
-
+.cart{
+    margin-bottom: 16px;
+}
 .rating{
     margin: 0 19px 0 0;
 }
+.feat{
+    margin-bottom: 14px !important;
+}
 .midtxt{
-    display: grid;
-    align-content: center;
+    // display: grid;
+    // align-content: center;
+    text-align: justify;
+    &.decs{
+        margin-bottom: 2rem;
+    }
+    &.lg{
+        font-size: 16px !important;
+    }
+    span{
+        position: relative;
+    }
+    & ion-button{
+        overflow: unset;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: .875rem;
+    }
+}
+ion-footer{
+    .header{
+        padding: 16px 28px;
+        // justify-content: center !important;
+        gap: 16px;
+    }
+    .btn{
+        --padding-start: 58px;
+        --padding-end: 58px;
+        --padding-top: 16px;
+        --padding-bottom: 16px;
+    }
 }

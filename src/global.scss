@@ -119,6 +119,11 @@ ion-button{
         }
         
     }
+    &.btn-icon{
+        img{
+            margin-right: 16px;
+        }
+    }
 }
 
 swiper-container{
@@ -156,6 +161,11 @@ swiper-container::part(bullet-active) {
 .header{
     display: flex;
     justify-content: space-between;
+
+}
+.footer-bg{
+    padding: 16px;
+    background: #FFFFFF1F;
 }
 
 ion-button{
@@ -234,7 +244,7 @@ ion-item{
 }
 
 .midtxt{
-    font-size: 14px;
+    font-size: 14px !important;
     color: #FFFFFFDE;
     line-height: 1.5rem;
     font-weight: 400;
@@ -282,3 +292,68 @@ ion-item{
         align-content: center;
     }
 }
+.feat{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFFDE;
+    margin-bottom: 12px;
+    padding-right: 24px;
+
+    ion-button{
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    
+    .feat-txt{
+        display: grid;
+        align-content: center;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}
+.line{
+    height: 1px;
+    border-bottom: 1px solid #FFFFFF1F;
+    margin-bottom: 1.4375rem;
+}
+.flash-deal{
+    display: flex;
+    // justify-content: space-between;
+    margin-bottom: 2rem;
+    .left{
+        background: #FFFFFF61;
+        padding: 46px 20px;
+        border-radius: 16px 0 0 16px;
+    }
+    .right{
+        padding: 1rem;
+        border-radius: 0 16px 16px 0;
+        background: #1e1e1e;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+
+        .pricing{
+            display: flex;
+            justify-content: space-between;
+        }
+        .r-text{
+            line-height: 1.875rem;
+        }
+
+        .percentage{
+            background: #393939;
+            width: fit-content;
+            padding: 6px 16px;
+            border-radius: 24px;
+            font-size: 12px;
+            font-weight: 200;
+            margin-bottom: 8px;
+            
+        }
+    }
+}
+.fs-16{
+    font-size: 16px !important;
+}
+

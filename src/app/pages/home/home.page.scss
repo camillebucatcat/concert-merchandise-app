@@ -9,25 +9,6 @@ ion-content{
     --padding-start: 1.5rem;
     --padding-end: 1.5rem;
 }
-.feat{
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    margin-bottom: 12px;
-    padding-right: 24px;
-
-    ion-button{
-        font-size: .875rem;
-        font-weight: 500;
-    }
-    
-    .feat-txt{
-        display: grid;
-        align-content: center;
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
-}
 swiper-container{
     margin-bottom: 2rem;
     .home-img{
@@ -102,41 +83,5 @@ swiper-slide{
     }
 }
 
-.flash-deal{
-    display: flex;
-    // justify-content: space-between;
-    margin-bottom: 2rem;
-    .left{
-        background: #FFFFFF61;
-        padding: 46px 20px;
-        border-radius: 16px 0 0 16px;
-    }
-    .right{
-        padding: 1rem;
-        border-radius: 0 16px 16px 0;
-        background: #1e1e1e;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
 
-        .pricing{
-            display: flex;
-            justify-content: space-between;
-        }
-        .r-text{
-            line-height: 1.875rem;
-        }
-
-        .percentage{
-            background: #393939;
-            width: fit-content;
-            padding: 6px 16px;
-            border-radius: 24px;
-            font-size: 12px;
-            font-weight: 200;
-            margin-bottom: 8px;
-            
-        }
-    }
-}
 

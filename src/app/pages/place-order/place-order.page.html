@@ -1,0 +1,60 @@
+<ion-header [translucent]="true" class="ion-padding-horizontal">
+  <ion-toolbar>
+    <ion-button fill="clear">
+      <img src="./assets/icon/arrow-left.svg" alt="">
+    </ion-button>
+      <ion-title>Order Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+
+    <div class="flash-deal">
+      <div class="left">
+        <img src="./assets/images/shirt1.svg" alt="">
+      </div>
+      <div class="right">
+        <div class="r-text">Rock n roll Organic T-Shirt</div>
+        <div class="sub-text">Size: <span>Large</span></div>
+        <div class="sub-text">Color/Style: <span>Black</span></div>
+        <div class="sub-text">Quantity: <span>1</span></div>
+        <div class="r-text price">₱ 750.00</div>
+      </div>
+    </div>
+
+    <div class="address">
+      <div class="addtxt">
+        <span><img src="./assets/icon/map-pin.svg" alt=""></span> <div>Delivery Address</div>
+      </div>
+      <div class="add-list">
+        <ion-item button="true" lines="none">
+          #3945 Purok IV Sta. Elena Hagonoy, Bulacan, North Luzon, 3002
+          <ion-button fill="clear"><img src="./assets/icon/more-vertical.svg" alt=""></ion-button>
+        </ion-item>
+      </div>
+      <div class="add-btn">
+        <ion-button fill="clear" expand="block" class="btn-icon add-btn">
+        <img src="./assets/icon/plus.svg" width="24">
+        Add New Address
+        </ion-button>
+      </div>
+      <div class="line"></div>
+  
+      <div class="addtxt mb">
+        <span><img src="./assets/icon/award.svg" alt=""></span> <div>Voucher</div>
+      </div>
+    </div>
+    <ion-item button="true" lines="none" class="fs-16">Select Voucher</ion-item>
+
+</ion-content>
+
+<ion-footer class="">
+  <div class="footer-bg">
+    <div class="header">
+      <div class="sub-text">Total to Pay</div>
+      <div class="product-txt">₱ 786.00</div>
+    </div>
+    <ion-button expand="block" shape="block" class="btn">Place Order</ion-button>
+  </div>
+</ion-footer>
