@@ -52,6 +52,7 @@ $red: #DF2E38;
 }
 ion-header{
     padding-top: 10px;
+    font-weight: 500 !important;
     ion-toolbar{
         --background: #0000;
         color: #fff;
@@ -92,6 +93,7 @@ ion-button{
         --color: #fff !important;
         --background: #DF2E38;
         --background-activated: #b6252c;
+
     }
     &.blk-btn{
         --color: #FFFFFFDE !important;
@@ -124,6 +126,26 @@ ion-button{
         img{
             margin-right: 16px;
         }
+    }
+    &.red-btn{
+        --background: #FFFFFF1F;
+        --background-activated: #DF2E38;
+        --color-activated: #fff;
+        --color: #FFFFFFDE !important;
+        --transition: 0.2s ease-in;
+        font-weight: 400 !important;
+        .btn-txt{
+            padding: 0 16px;
+        }
+
+        &:active{
+            font-weight: 700 !important;
+        }
+    }
+    &.logout-btn{
+        --background: transparent;
+        --color: #FFFFFFDE !important;
+        font-weight: 400 !important;
     }
 }
 
@@ -382,4 +404,8 @@ ion-item{
         --padding-start: 1em !important;
         --padding-end: 1em !important;
     }
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
 }
