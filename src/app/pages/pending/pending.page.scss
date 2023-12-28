@@ -1,0 +1,17 @@
+.cart{
+    margin-top: 0.5rem;
+
+    ion-button{
+        img{
+            margin: 0 !important;
+            width: auto !important;
+        }
+        min-height: 32px !important;
+        width: 34px;
+    }
+}
+p{
+    align-content: end !important;
+    margin-bottom: 5px;
+    font-weight: 700;
+}

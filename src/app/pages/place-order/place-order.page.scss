@@ -20,7 +20,8 @@
     
     .add-list{
         ion-item{
-            display: flex;
+            // display: flex;
+            padding: 0.5rem 0 !important;
             line-height: 24px;
             background: transparent;
             --detail-icon-opacity: 0;
@@ -35,7 +36,8 @@
         font-weight: 400;
         border: 1px solid #DF2E38;
         border-radius: 12px !important;
-        font-size: .9375rem;
+        font-size: 14px;
+        padding: 8px 0 !important;
     }
 }
 .header{

@@ -1,8 +1,10 @@
 .flash-deal{
+    justify-content: center;
     margin-bottom: 1rem !important;
 }
 .note{
     text-align: center !important;
+    letter-spacing: 0.5px;
 }
 p{
     align-content: end !important;
@@ -22,5 +24,10 @@ p{
     }
 }
 .total{
-    margin-top: 64px;
+    margin-top: 34px;
+}
+.empty-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

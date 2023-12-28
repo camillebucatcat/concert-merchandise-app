@@ -1,0 +1,71 @@
+$sizes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25;
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$fonts: 8, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 22, 21, 24, 25, 26, 28, 30, 32, 34, 35, 36, 38, 40, 42, 44, 46, 48, 50;
+
+@each $size in $sizes {
+    .mt-#{$size} {
+      margin-top: $size + rem!important;
+    }
+    .mb-#{$size} {
+      margin-bottom: $size + rem!important;
+    }
+    .my-#{$size} {
+      margin-top: $size + rem!important;
+      margin-bottom: $size + rem!important;
+    }
+    .ml-#{$size} {
+      margin-left: $size + rem!important;
+    }
+    .mr-#{$size} {
+      margin-right: $size + rem!important;
+    }
+    .p-#{$size} {
+      padding: $size + rem!important;
+    }
+    .pt-#{$size} {
+      padding-top: $size + rem!important;
+    }
+    .pb-#{$size} {
+      padding-bottom: $size + rem!important;
+    }
+    .py-#{$size} {
+      padding-top: $size + rem!important;
+      padding-bottom: $size + rem!important;
+    }
+    .pl-#{$size} {
+      padding-left: $size + rem!important;
+    }
+    .pr-#{$size} {
+      padding-right: $size + rem!important;
+    }
+    .px-#{$size} {
+      padding-left: $size + rem!important;
+      padding-right: $size + rem!important;
+    }
+    .py-#{$size} {
+      padding-top: $size + rem!important;
+      padding-bottom: $size + rem!important;
+    }
+  }
+
+  @each $weight in $weights {
+    .fw-#{$weight} {
+      font-weight: $weight!important;
+    }
+  }
+  
+  @each $font in $fonts {
+    .fs-#{$font} {
+      font-size: $font + px!important;
+    }
+  }
+
+  .text-secondary{
+    color: #DF2E38;
+  }
+  .text-grey{
+    color: #FFFFFF99;
+  }
+  .text-high{
+    color: #FFFFFFDE;
+  }

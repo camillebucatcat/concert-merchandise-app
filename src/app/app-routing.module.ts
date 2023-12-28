@@ -47,6 +47,34 @@ const routes: Routes = [
     path: 'cart',
     loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
   },
+  {
+    path: 'order-details',
+    loadChildren: () => import('./pages/order-details/order-details.module').then( m => m.OrderDetailsPageModule)
+  },
+  {
+    path: 'pending',
+    loadChildren: () => import('./pages/pending/pending.module').then( m => m.PendingPageModule)
+  },
+  {
+    path: 'preparing',
+    loadChildren: () => import('./pages/preparing/preparing.module').then( m => m.PreparingPageModule)
+  },
+  {
+    path: 'for-delivery',
+    loadChildren: () => import('./pages/for-delivery/for-delivery.module').then( m => m.ForDeliveryPageModule)
+  },
+  {
+    path: 'received',
+    loadChildren: () => import('./pages/received/received.module').then( m => m.ReceivedPageModule)
+  },
+  {
+    path: 'delivery-details',
+    loadChildren: () => import('./pages/delivery-details/delivery-details.module').then( m => m.DeliveryDetailsPageModule)
+  },
+  {
+    path: 'notifications',
+    loadChildren: () => import('./pages/notifications/notifications.module').then( m => m.NotificationsPageModule)
+  },
 ];
 
 @NgModule({

@@ -11,6 +11,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
+  <!-- <div class="ion-padding"></div> -->
+  <!-- empty shopping cart  -->
+  <!-- <div class="" style="height: -webkit-fill-available;">
+    <div class="fw-600 text-secondary empty-cart">
+      <span class="mr-1"><img src="./assets/icon/shopping-cart-empty.svg"></span>
+      <div class="">Your Cart is Empty</div>
+    </div>
+  </div> -->
   <div class="midtxt note">
     Click the trash bin icon to remove item from the cart
   </div>
@@ -50,11 +58,36 @@
     </div>
   </div>
 
-  <div class="total">
-    <div class="header">
-      <div class="sub-text">Total to Pay</div>
-      <div class="product-txt">₱ 786.00</div>
-    </div>
-    <ion-button expand="block" shape="block" class="btn">Place Order</ion-button>
-  </div>
 </ion-content>
+
+<ion-footer>
+  <div class="ion-padding">
+    <div class="total">
+      <div class="header mb-1">
+        <div class="sub-text">Total to Pay</div>
+        <div class="product-txt">₱ 786.00</div>
+      </div>
+      <ion-button expand="block" shape="block" class="btn">Place Order</ion-button>
+    </div>
+  </div>
+  <div class="tabs">
+    <ion-button fill="clear" shape="block">
+      <div class="home-tab text-grey">
+        <img src="./assets/icon/home.svg" class="">
+            <div>Home</div> 
+      </div>
+    </ion-button>
+    <ion-button fill="clear" class="mr-4 ml-4" shape="block">
+      <div class="search-tab text-grey">
+        <img src="./assets/icon/search.svg" class="">
+            <div>Search</div> 
+      </div>
+    </ion-button>
+    <ion-button fill="clear" shape="block">
+      <div class="cart-tab text-grey">
+        <img src="./assets/icon/shopping-cart-grey.svg" class="">
+            <div>Cart</div> 
+      </div>
+    </ion-button>
+  </div>
+</ion-footer>
