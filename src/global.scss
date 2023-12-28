@@ -409,3 +409,20 @@ ion-item{
     display: flex;
     justify-content: space-evenly;
 }
+.notif-txt{
+    display: flex;
+    justify-content: space-between;
+
+    .text-high{
+        display: grid;
+        align-content: center;
+        margin-top: 2px;
+    }
+
+    ion-item{
+        .sub-text{
+            margin-top: 6px !important;
+            line-height: normal;
+        }
+    }
+}

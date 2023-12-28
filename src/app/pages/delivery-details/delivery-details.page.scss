@@ -1,0 +1,23 @@
+ion-toolbar{
+    ion-button img{
+        width: 24px;
+        height: 24px;
+    }
+}
+.map{
+    display: flex;
+    justify-content: center;
+    img{
+        border-radius: 1.875rem;
+        min-width: -webkit-fill-available;
+    }
+}
+.text-high{
+    display: grid;
+    align-content: center;
+}
+ion-item{
+    .text-high{
+        margin-bottom: 8px;
+    }
+}
