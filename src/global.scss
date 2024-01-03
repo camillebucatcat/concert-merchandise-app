@@ -223,7 +223,7 @@ ion-grid, ion-row{
 }
 ion-segment{
     gap: 16px;
-
+    
 }
 ion-segment-button::part(indicator-background) {
     background: $red;
@@ -236,10 +236,10 @@ ion-segment-button{
     padding: 8px 24px;
     border-radius: 100px;
     font-weight: 400;
-    &span:active{
+    
+    &.active{
         font-weight: 700 !important;
     }
-
 }
 ion-tab-bar{
     background: #1e1e1e;
