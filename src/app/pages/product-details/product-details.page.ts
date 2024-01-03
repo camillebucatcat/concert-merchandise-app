@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BottomSheetComponent } from 'src/app/components/bottom-sheet/bottom-sheet.component';
+import { ModalController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-product-details',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsPage implements OnInit {
 
-  constructor() { }
-
+  constructor(private modalCtrl: ModalController) { }
+  // BottomSheet = false;
+  
+  // setOpen(isOpen: boolean) {
+  //   this.BottomSheet = isOpen;
+  // }
+  async sheet() {
+    const modal = await this.modalCtrl.create({
+      component: BottomSheetComponent,
+      cssClass: "sheet-modal"
+    });
+    modal.present();
+  }
+  
   ngOnInit() {
   }
-
+  
 }

@@ -8,8 +8,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="searchbar">
+    <ion-searchbar searchIcon="none" placeholder="Search shop name">
+    </ion-searchbar>
+    <ion-button fill="solid" class="btn">
+      <img src="./assets/icon/search.svg" alt="">
+    </ion-button>
+  </div>
   <div class="notifs mt-2">
-    <ion-item lines="none" class="mb-2">
+    <ion-item button="true" detail="false" lines="none" class="mb-2">
       <div>
         <img src="./assets/images/messages1.png" style="border-radius: 50px;">
       </div>
@@ -21,7 +28,7 @@
         <div class="sub-text">Good news! Your order has been success...</div>
       </ion-label>
     </ion-item>
-    <ion-item lines="none" class="mb-2">
+    <ion-item button="true" detail="false" lines="none" class="mb-2">
       <div>
         <img src="./assets/images/messages2.png" style="border-radius: 50px;">
       </div>
@@ -33,7 +40,7 @@
         <div class="sub-text">Your order is on its way and is scheduled...</div>
       </ion-label>
     </ion-item>
-    <ion-item lines="none" class="mb-2">
+    <ion-item button="true" detail="false" lines="none" class="mb-2">
       <div>
         <img src="./assets/images/messages3.png" style="border-radius: 50px;">
       </div>
@@ -47,3 +54,26 @@
     </ion-item>
   </div>
 </ion-content>
+
+<ion-footer>
+  <div class="tabs">
+    <ion-button fill="clear" shape="block">
+      <div class="tabs-btn text-grey">
+        <img src="./assets/icon/home.svg" class="">
+            <div>Home</div> 
+      </div>
+    </ion-button>
+    <ion-button fill="clear" class="mr-4 ml-4" shape="block">
+      <div class="tabs-btn text-grey">
+        <img src="./assets/icon/search.svg" class="">
+            <div>Search</div> 
+      </div>
+    </ion-button>
+    <ion-button  shape="block">
+      <div class="tabs-btn text-grey">
+        <img src="./assets/icon/shopping-cart-grey.svg" class="">
+            <div>Cart</div> 
+      </div>
+    </ion-button>
+  </div>
+</ion-footer>
