@@ -82,7 +82,7 @@ const routes: Routes = [
   {
     path: 'messages',
     loadChildren: () => import('./pages/messages/messages.module').then( m => m.MessagesPageModule)
-  },
+  }
 ];
 
 @NgModule({

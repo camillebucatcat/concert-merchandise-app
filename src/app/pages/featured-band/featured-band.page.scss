@@ -54,3 +54,13 @@ ion-content{
     --padding-end: 0 !important;
     --padding-top: 32px !important;
 }
+.card{
+    ion-button{
+        width: 40px !important;
+        min-height: 40px !important;
+        img{
+            margin: 0 !important;
+            width: 16px !important;
+        }
+    }
+}
