@@ -223,9 +223,11 @@ ion-grid, ion-row{
 }
 ion-segment{
     gap: 16px;
+
 }
-ion-segment::part(button-checked){
-    background: $red !important;
+ion-segment-button::part(indicator-background) {
+    background: $red;
+    border-radius: 100px;
 }
 ion-segment-button{
     color: #fff;
@@ -233,7 +235,11 @@ ion-segment-button{
     font-size: 1rem;
     padding: 8px 24px;
     border-radius: 100px;
-    --background-checked: $red;
+    font-weight: 400;
+    &span:active{
+        font-weight: 700 !important;
+    }
+
 }
 ion-tab-bar{
     background: #1e1e1e;
@@ -528,4 +534,11 @@ ion-popover::part(arrow){
         color: #fff;
         border-radius: 0 0 16px 16px;
     }
+}
+.txt-overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 123px;
+    overflow: hidden;
+    line-height: 1.5rem;
 }

@@ -16,239 +16,914 @@
     </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-    <!-- <ion-segment scrollable="true" value="tshirt" css-mode="true">
-        <ion-segment-button value="tshirt" tab="tshirt">
+    <ion-segment scrollable="true" value="tshirt" css-mode="true" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
+        <ion-segment-button value="tshirt" checked>
             <ion-label>T - Shirt</ion-label>
         </ion-segment-button>
-        <ion-segment-button value="caps" tab="caps">Caps</ion-segment-button>
-        <ion-segment-button value="stickers" tab="stickers">Stickers</ion-segment-button>
-        <ion-segment-button value="keychain" tab="keychain">Keychain</ion-segment-button>
-    </ion-segment> -->
-    <ion-tabs>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="tshit">
-            <ion-icon name="play-circle"></ion-icon>
-            Listen Now
-          </ion-tab-button>
-          <ion-tab-button tab="caps">
-            <ion-icon name="radio"></ion-icon>
-            Radio
-          </ion-tab-button>
-          <ion-tab-button tab="stickers">
-            <ion-icon name="library"></ion-icon>
-            Library
-          </ion-tab-button>
-          <ion-tab-button tab="keychain">
-            <ion-icon name="search"></ion-icon>
-            Search
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
+        <ion-segment-button value="caps">
+            <ion-label>Caps</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="stickers">
+            <ion-label>Stickers</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="keychain">
+            <ion-label>Keychain</ion-label>
+        </ion-segment-button>
+    </ion-segment>
     <div class="mt-1">
         <ion-button fill="clear"><span><img src="./assets/icon/filter.svg" alt=""></span>Filter By</ion-button>
     </div>
-    <div>
-        <ion-grid>
-            <ion-row>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-              <ion-col>
-                <div class="card">
-                  <div class="top">
-                    <img src="./assets/images/prodshirt1.svg" alt="">
-                  </div>
-                  <div class="bot">
-                    <div>Punk Rock T-Shirt</div>
-                    <div class="rating">
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
-                      <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
-                    </div>
-                    <div class="sub-text">100 sold</div>
-                    <div class="cart col-price">
-                      <p>₱ 249.00</p>
-                      <ion-button class="btn col-btn cart-btn" shape="round">
-                        <img src="./assets/icon/shopping-cart.svg" alt="">
-                      </ion-button>
-                    </div>
-                  </div>
-                </div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+    <div [ngSwitch]="type">
+        <ion-list *ngSwitchCase="'tshirt'">
+            <div class="ion-padding-end">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/prodshirt1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="">Punk Rock T-Shirt</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+            </div>
+        </ion-list>
+    
+        <ion-list *ngSwitchCase="'caps'">
+            <div class="ion-padding-end">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/cap2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+            </div>
+        </ion-list>
+        <ion-list *ngSwitchCase="'stickers'">
+            <div class="ion-padding-end">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Rock on Sticker</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Rock Skull Sticker</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+            </div>
+        </ion-list>
+        <ion-list *ngSwitchCase="'keychain'">
+            <div class="ion-padding-end">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/keychain.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Never Too Old to <br> Rock ‘N’ Roll Ke...</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 75.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/keychain2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">It’s Only Rock & <br> Roll Keychain</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 55.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker1.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Adult Hip Hop <br> Punk Rock Skull Cap</div>
+                                <div class="rating">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="card">
+                          <div class="top">
+                            <img src="./assets/images/sticker2.svg" alt="">
+                          </div>
+                          <div class="bot">
+                            <div>
+                                <div class="txt-overflow fs-14">Punk Rock T-Shirt</div>
+                                <div class="rating mt-0">
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/star.svg" alt=""></div>
+                                  <div class="star"><img src="./assets/icon/half-star.svg" alt=""></div>
+                                </div>
+                                <div class="sub-text">100 sold</div>
+                            </div>
+                            <div class="cart col-price">
+                              <p>₱ 249.00</p>
+                              <ion-button class="btn col-btn cart-btn" shape="round">
+                                <img src="./assets/icon/shopping-cart.svg" alt="">
+                              </ion-button>
+                            </div>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+            </div>
+        </ion-list>
+      </div>
+    <div >
     </div>
 </ion-content>

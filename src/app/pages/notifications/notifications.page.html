@@ -8,62 +8,137 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="buttons">
+  <ion-segment scrollable="true" value="tshirt" css-mode="true" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable="false">
+    <ion-segment-button value="delivery" checked>
+        <ion-label class="fs-14"><span>Delivery</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="arrivals">
+        <ion-label class="fs-14">New Arrivals</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="sale">
+        <ion-label class="fs-14">Sale Details</ion-label>
+    </ion-segment-button>
+</ion-segment>
+  <!-- <div class="buttons">
     <ion-button shape="round" class="red-btn"><div class="btn-txt">Delivery</div></ion-button>
     <ion-button shape="round" class="red-btn"><div class="btn-txt">New Arrivals</div></ion-button>
     <ion-button shape="round" class="red-btn"><div class="btn-txt">Sale Details</div></ion-button>
-  </div>
+  </div> -->
+  <div [ngSwitch]="type">
+    <ion-list *ngSwitchCase="'delivery'">
+        <div class="notifs mt-2">
+          <ion-item lines="none">
+            <div>
+              <img src="./assets/icon/package-check.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Order Delivered</div>
+                <div class="sub-text">06/17/2023</div>
+              </div>
+              <div class="sub-text">Great news! Your order has been succ...</div>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <div>
+              <img src="./assets/icon/truck-notif.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Package Shipped</div>
+                <div class="sub-text">06/12/2023</div>
+              </div>
+              <div class="sub-text">Your package has been shipped and is...</div>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <div>
+              <img src="./assets/icon/delayed-notif.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Delivery Delayed</div>
+                <div class="sub-text">05/03/2023</div>
+              </div>
+              <div class="sub-text">We regret to inform you that there has...</div>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <div>
+              <img src="./assets/icon/truck-notif.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Out for Delivery</div>
+                <div class="sub-text">04/24/2023</div>
+              </div>
+              <div class="sub-text">Your package has been shipped and is...</div>
+            </ion-label>
+          </ion-item>
+        </div>
+      </ion-list>
+      <ion-list *ngSwitchCase="'arrivals'">
+        <div class="notifs mt-2">
+          <ion-item lines="none">
+            <div class="arrival mr-1">
+              <img src="./assets/images/notifshirt1.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Punk Rock T-Shirt</div>
+                <div class="sub-text">06/17/2023</div>
+              </div>
+              <div class="sub-text">We are excited to announce the arrival...</div>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div class="notifs mt-2">
+          <ion-item lines="none">
+            <div class="arrival mr-1">
+              <img src="./assets/images/notifshirt1.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Punk Rock T-Shirt</div>
+                <div class="sub-text">06/17/2023</div>
+              </div>
+              <div class="sub-text">We are excited to announce the arrival...</div>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div class="notifs mt-2">
+          <ion-item lines="none">
+            <div class="arrival mr-1">
+              <img src="./assets/images/notifshirt1.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="text-high fw-700">Punk Rock T-Shirt</div>
+                <div class="sub-text">06/17/2023</div>
+              </div>
+              <div class="sub-text">We are excited to announce the arrival...</div>
+            </ion-label>
+          </ion-item>
+        </div>
+      </ion-list>
+      <ion-list *ngSwitchCase="'sale'">
+        <div class="notifs mt-2">
+          <ion-item lines="none">
+            <div class="arrival mr-1">
+              <img src="./assets/images/notifshirt1.svg">
+            </div>
+            <ion-label>
+              <div class="notif-txt">
+                <div class="txt-overflow text-high fw-700">Simple Words Trend...</div>
+                <div class="sub-text">06/17/2023</div>
+              </div>
+              <div class="sub-text">We have some thrilling news for all Pa...</div>
+            </ion-label>
+          </ion-item>
+        </div>
+      </ion-list>
+      </div>
 
-  <div class="notifs mt-2">
-    <ion-item lines="none">
-      <div>
-        <img src="./assets/icon/package-check.svg">
-      </div>
-      <ion-label>
-        <div class="notif-txt">
-          <div class="text-high fw-700">Order Delivered</div>
-          <div class="sub-text">06/17/2023</div>
-        </div>
-        <div class="sub-text">Great news! Your order has been succ...</div>
-      </ion-label>
-    </ion-item>
-    <ion-item lines="none">
-      <div>
-        <img src="./assets/icon/truck-notif.svg">
-      </div>
-      <ion-label>
-        <div class="notif-txt">
-          <div class="text-high fw-700">Package Shipped</div>
-          <div class="sub-text">06/12/2023</div>
-        </div>
-        <div class="sub-text">Your package has been shipped and is...</div>
-      </ion-label>
-    </ion-item>
-    <ion-item lines="none">
-      <div>
-        <img src="./assets/icon/delayed-notif.svg">
-      </div>
-      <ion-label>
-        <div class="notif-txt">
-          <div class="text-high fw-700">Delivery Delayed</div>
-          <div class="sub-text">05/03/2023</div>
-        </div>
-        <div class="sub-text">We regret to inform you that there has...</div>
-      </ion-label>
-    </ion-item>
-    <ion-item lines="none">
-      <div>
-        <img src="./assets/icon/truck-notif.svg">
-      </div>
-      <ion-label>
-        <div class="notif-txt">
-          <div class="text-high fw-700">Out for Delivery</div>
-          <div class="sub-text">04/24/2023</div>
-        </div>
-        <div class="sub-text">Your package has been shipped and is...</div>
-      </ion-label>
-    </ion-item>
-  </div>
 </ion-content>
 
 <ion-footer>

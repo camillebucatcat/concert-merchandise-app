@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./featured-band.page.scss'],
 })
 export class FeaturedBandPage implements OnInit {
+  
+  type = 'tshirt';
 
   constructor() { }
-
+  segmentChanged(ev: any) {
+    console.log('Segment changed', ev);
+  }
   ngOnInit() {
   }
 
