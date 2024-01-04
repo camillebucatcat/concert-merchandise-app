@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from "@angular/common";
 @Component({
   selector: 'app-messages',
   templateUrl: './messages.page.html',
@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagesPage implements OnInit {
 
-  constructor() { }
-
+  constructor(private location: Location) { }
+  back(){
+    this.location.back();
+  }
   ngOnInit() {
   }
 
