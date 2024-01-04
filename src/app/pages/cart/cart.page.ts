@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalController, PopoverController } from '@ionic/angular';
 import { RemoveItemsComponent } from 'src/app/components/remove-items/remove-items.component';
-
+import { Location } from "@angular/common";
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.page.html',
@@ -9,7 +9,10 @@ import { RemoveItemsComponent } from 'src/app/components/remove-items/remove-ite
 })
 export class CartPage implements OnInit {
 
-  constructor(public popoverController: PopoverController, private modalCtrl: ModalController) { }
+  constructor(public popoverController: PopoverController, private modalCtrl: ModalController,private location: Location) { }
+  back(){
+    this.location.back();
+  }
   // @ViewChild('popover') popover;
 
   // isOpen = false;

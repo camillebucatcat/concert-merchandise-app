@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from "@angular/common";
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.page.html',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsPage implements OnInit {
   type = 'delivery';
-  constructor() { }
+  constructor(private location: Location) { }
+  back(){
+    this.location.back();
+  }
   segmentChanged(ev: any) {
     console.log('Segment changed', ev);
   }

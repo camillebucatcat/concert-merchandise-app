@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from "@angular/common";
 @Component({
   selector: 'app-featured-band',
   templateUrl: './featured-band.page.html',
@@ -9,7 +9,10 @@ export class FeaturedBandPage implements OnInit {
   
   type = 'tshirt';
 
-  constructor() { }
+  constructor(private location: Location) { }
+  back(){
+    this.location.back();
+  }
   segmentChanged(ev: any) {
     console.log('Segment changed', ev);
   }
