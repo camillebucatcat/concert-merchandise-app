@@ -312,8 +312,10 @@ ion-item{
     p{
         display: grid;
         align-content: center;
+        margin: 0;
     }
     &.col-price{
+        margin-top: 8px;
         font-size: 14px !important;
         font-weight: 700;
     }
