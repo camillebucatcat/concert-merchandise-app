@@ -14,5 +14,9 @@ ion-button{
 }
 
 ion-grid, ion-row{
-    gap: 12px !important;
+    gap: 32px !important;
+    padding: 0 !important;
+}
+ion-col{
+    padding: 0 !important;
 }
