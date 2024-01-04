@@ -176,6 +176,9 @@ swiper-container{
     &::part(container) {
         overflow: unset!important;
     }
+    &::part(bullet){
+        margin: 0 8px;
+    }
 }
 swiper-container::part(pagination) {
     position: absolute;
