@@ -15,15 +15,16 @@ ion-content{
     animation: scale 2s ease forwards;
     animation-delay: 4s;
     border-radius: 50%;
-    top: 0;
+    top: 50%;
     bottom: 0;
-    left: -320px;
+    left: 50%;
     right: 0;
-    margin: auto;
+    margin-top: -750px;
+    margin-left: -750px;
     opacity: 0;
     overflow: hidden;
-    width: 1020px;
-    height: 1020px;
+    width: 1500px;
+    height: 1500px;
 }
 @keyframes scale {
     0%{
