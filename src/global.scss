@@ -251,7 +251,7 @@ ion-grid{
     display: grid;
 }
 ion-grid, ion-row{
-    gap: 8px;
+    gap: 16px;
     padding: 0;
 }
 .sub-text{
@@ -589,4 +589,7 @@ ion-popover::part(arrow){
         padding-inline-end: 10px !important;
         padding-top: 14px !important;
         padding-bottom: 14px !important;
+}
+ion-col{
+    padding: 0 !important;
 }
