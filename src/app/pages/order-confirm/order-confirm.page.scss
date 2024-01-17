@@ -15,7 +15,7 @@ ion-content{
 .confirm-content{
     display: grid;
     align-content: center;
-    height: -webkit-fill-available;
+    // height: -webkit-fill-available;
 }
 .confirm-txt{
     text-align: center;
@@ -33,4 +33,5 @@ ion-content{
 
 .btn{
     margin-bottom: 24px;
+    box-shadow: 0px 10px 30px 0px rgba(66, 33, 83, 0.15);
 }

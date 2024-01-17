@@ -58,7 +58,7 @@ ion-item{
 .midtxt{
     // display: grid;
     // align-content: center;
-    text-align: justify;
+    text-align: left;
     &.decs{
         margin-bottom: 2rem;
     }
@@ -70,11 +70,14 @@ ion-item{
     }
     & ion-button{
         overflow: unset;
-        position: absolute;
+        // position: absolute;
         top: 0;
         bottom: 0;
         margin: auto;
         font-size: .875rem;
+        // margin-left: 5px;
+        padding-bottom: 6px;
+        min-height: 10px;
     }
 }
 ion-footer{
@@ -89,4 +92,11 @@ ion-footer{
         --padding-top: 16px;
         --padding-bottom: 16px;
     }
+}
+.visited{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

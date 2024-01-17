@@ -1,3 +1,9 @@
+ion-header{
+    ion-toolbar{
+        --background: #121212 !important;
+        --opacity: 1 !important;
+    }
+}
 .price{
     margin-top: 1.5rem;
     font-weight: 700 !important;

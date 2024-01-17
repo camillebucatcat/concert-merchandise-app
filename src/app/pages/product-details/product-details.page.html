@@ -33,7 +33,20 @@
     <div class="sub-text midtxt">100 sold</div>
   </div>
   <div>
-    <div class="midtxt sub-text decs">a rebellious blend of style and sustainability. Crafted <br> with the earth in mind, this t-shirt is the perfect <br> embodiment of rock 'n' roll attitude and ... <span><ion-button fill="clear" class="">See more</ion-button></span></div>
+    <div class="midtxt sub-text decs" [ngClass]="{'isCollapsed': !isCollapsed, 'collapsed': isCollapsed}" [class.visited] = "isVisited == false">a rebellious blend of style and sustainability. Crafted <br> with the earth in mind, this t-shirt is the perfect <br> embodiment of rock 'n' roll attitude and
+      <span *ngIf="!isCollapsed">
+        distillery brunch etsy gentrify. Echo park freegan tumblr kinfolk cray tofu
+        VHS pok pok vinyl iceland meggings. Drinking vinegar direct trade tofu,
+        pinterest mlkshk semiotics lumbersexua</span><span (click)="isCollapsed = !isCollapsed" [hidden]="isReadMore"><ion-button fill="clear" *ngIf="isCollapsed" 
+          >See more</ion-button>
+          <ion-button fill="clear" *ngIf="!isCollapsed" (click) = "checkVisited()">See less</ion-button>
+        </span></div>
+    <!-- <div readMore="3" [readMoreOptions]="readMoreOption" class="midtxt sub-text decs">Blog ennui paleo tumblr man braid shaman wolf echo park tote bag umami.
+      Portland shabby chic church-key af. Trust fund 90's schlitz adaptogen
+      post-ironic sartorial glossier knausgaard thundercats YOLO small batch
+      distillery brunch etsy gentrify. Echo park freegan tumblr kinfolk cray tofu
+      VHS pok pok vinyl iceland meggings. Drinking vinegar direct trade tofu,
+      pinterest mlkshk semiotics lumbersexua</div> -->
   </div>
   <div class="line"></div>
   <div class="feat header-btns">

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ProductDetailsPageRoutingModule } from './product-details-routing.module';
 
 import { ProductDetailsPage } from './product-details.page';
+import { NgxsReadMoreModule } from '@minni/read-more';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProductDetailsPageRoutingModule
+    ProductDetailsPageRoutingModule,
+    NgxsReadMoreModule
   ],
   declarations: [ProductDetailsPage]
 })

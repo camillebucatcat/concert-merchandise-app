@@ -1,3 +1,13 @@
+.modal-btns{
+    button{
+        &:active{
+            background: #DF2E38;
+        }
+        &:focus{
+            background: #DF2E38;
+        }
+    }
+}
 .bs-left{
     padding: 3px 3px;
 }
@@ -10,10 +20,14 @@
     gap: 1rem;
     button{
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 0 4px 4px 0;
+        border-radius: 4px;
         .bs-right:active{
-            background: #ffffff2c;
+            background: #DF2E38;
         }
+        &.bs-right:focus{
+            background: #DF2E38;
+        }
+        
     }
 }
 .bs-btn{

@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BottomSheetComponent } from 'src/app/components/bottom-sheet/bottom-sheet.component';
 import { ModalController, NavController } from '@ionic/angular';
 import { Location } from "@angular/common";
+import { NgxsReadMoreModule, ReadMoreOptions } from '@minni/read-more';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.page.html',
@@ -25,7 +26,22 @@ export class ProductDetailsPage implements OnInit {
     });
     modal.present();
   }
+  @Input () isReadMore: boolean = false;
+  public isCollapsed: boolean = true;
   
+  readMoreOption: ReadMoreOptions = {
+    readLessText: 'less',
+    readMoreText: 'more', 
+    styles: {             
+      color: "#DF2E38",
+    },
+    classes: ['custom-style', 'blog-style']
+  }
+  public isVisited = true;
+public checkVisited() {
+   // reverse the value of property
+   this.isVisited = this.isVisited;
+}
   ngOnInit() {
   }
   
