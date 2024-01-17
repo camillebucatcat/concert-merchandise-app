@@ -587,8 +587,9 @@ ion-popover::part(arrow){
 .searchbar-input.sc-ion-searchbar-ios {
         padding-inline-start: 10px !important;
         padding-inline-end: 10px !important;
-        padding-top: 14px !important;
-        padding-bottom: 14px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        min-height: 50px;
 }
 ion-col{
     padding: 0 !important;
