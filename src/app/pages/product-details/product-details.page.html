@@ -33,7 +33,7 @@
     <div class="sub-text midtxt">100 sold</div>
   </div>
   <div>
-    <div class="midtxt sub-text decs" [ngClass]="{'isCollapsed': !isCollapsed, 'collapsed': isCollapsed}" [class.visited] = "isVisited == false">a rebellious blend of style and sustainability. Crafted <br> with the earth in mind, this t-shirt is the perfect <br> embodiment of rock 'n' roll attitude and
+    <div class="midtxt sub-text decs" [ngClass]="{'isCollapsed': !isCollapsed, 'collapsed': isCollapsed}" [class.visited] = "isVisited == false">a rebellious blend of style and sustainability. Crafted with the earth in mind, this t-shirt is the perfect embodiment of rock 'n' roll attitude and
       <span *ngIf="!isCollapsed">
         distillery brunch etsy gentrify. Echo park freegan tumblr kinfolk cray tofu
         VHS pok pok vinyl iceland meggings. Drinking vinegar direct trade tofu,
@@ -64,11 +64,19 @@
     </div>
     <div class="midtxt lg">4.5</div>
   </div>
+  <ion-toast
+    trigger="footerAnchor"
+    position="bottom"
+    positionAnchor="footer"
+    class="custom-toast"
+    message="Item was added to cart successfully."
+    duration="2000"
+  ></ion-toast>
 </ion-content>
 
-<ion-footer class="">
+<ion-footer class="" id="footer">
   <div class="header footer-bg">
-    <ion-button fill="clear" class="btn-icon" (click)="sheet()">
+    <ion-button fill="clear" class="btn-icon" (click)="sheet()" id="footerAnchor">
       <img src="./assets/icon/shopping-cart-red.svg" width="24">
       Add to Cart
     </ion-button>

@@ -8,6 +8,7 @@ import { ProductDetailsPageRoutingModule } from './product-details-routing.modul
 
 import { ProductDetailsPage } from './product-details.page';
 import { NgxsReadMoreModule } from '@minni/read-more';
+import { BottomSheetComponent } from 'src/app/components/bottom-sheet/bottom-sheet.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,9 @@ import { NgxsReadMoreModule } from '@minni/read-more';
     ProductDetailsPageRoutingModule,
     NgxsReadMoreModule
   ],
-  declarations: [ProductDetailsPage]
+  declarations: [ProductDetailsPage],
+  exports: [
+    // BottomSheetComponent,
+  ]
 })
 export class ProductDetailsPageModule {}

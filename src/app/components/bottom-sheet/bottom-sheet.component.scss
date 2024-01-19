@@ -1,13 +1,4 @@
-.modal-btns{
-    button{
-        &:active{
-            background: #DF2E38;
-        }
-        &:focus{
-            background: #DF2E38;
-        }
-    }
-}
+
 .bs-left{
     padding: 3px 3px;
 }
@@ -30,7 +21,7 @@
         
     }
 }
-.bs-btn{
-    width: -webkit-fill-available;
-    border-radius: 12px;
-}
+// .bs-btn{
+//     width: -webkit-fill-available;
+//     border-radius: 12px;
+// }

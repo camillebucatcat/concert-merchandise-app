@@ -1,14 +1,14 @@
-<!-- <ion-content></ion-content> -->
-<div class="modal">
+
+  <div class="modal">
   <div class="text-high fw-500 mb-1">Please Select Details</div>
   <div class="text-grey fs-14 m-8">Available Sizes</div>
 
   <div class="modal-btns">
     <!-- <ion-button color="light" class="blk-btn">Close</ion-button> -->
-    <button ion-button class="fs-12 text-high p-1">S</button>
-    <button ion-button class="fs-12 text-high p-1">M</button>
-    <button ion-button class="fs-12 text-high p-1">L</button>
-    <button ion-button class="fs-12 text-high p-1">XL</button>
+    <ion-button class="fs-12 fw-400 text-high"><div>S</div></ion-button>
+    <ion-button class="fs-12 fw-400 text-high"><div>M</div></ion-button>
+    <ion-button class="fs-12 fw-400 text-high"><div>L</div></ion-button>
+    <ion-button class="fs-12 fw-400 text-high"><div>XL</div></ion-button>
   </div>
   <div class="line my-2"></div>
   <div class="text-grey fs-14 m-8">Available Colors/Style</div>
@@ -35,21 +35,20 @@
   </div>
   <div class="line my-2"></div>
   <div class="modal-btns">
-    <button ion-button class="fs-12 text-high p-1">
-      <img src="./assets/icon/minus.svg" alt="">
-    </button>
+    <ion-button class="fs-12 text-high amt">
+      <div><img src="./assets/icon/minus.svg" alt=""></div>
+    </ion-button>
     <div class="counter text-high fs-14 fw-700"
     style="display: grid;
     align-content: center;">1</div>
-    <button ion-button class="fs-12 text-high p-1">
-      <img src="./assets/icon/plus-white.svg" alt="">
-    </button>
+    <ion-button class="fs-12 text-high amt">
+      <div><img src="./assets/icon/plus-white.svg" alt=""></div>
+    </ion-button>
   </div>
   <div class="line my-2"></div>
   <div class="header mb-2">
     <div class="fs-14 fw-400 text-grey">Amount:</div>
     <div class="fw-700 text-high">₱ 750.00</div>
   </div>
-  <!-- <ion-button expand="block" shape="" class="btn">Add to Cart</ion-button> -->
-  <button class="bs-btn fs-16 fw-700 bg-primary py-1 px-6" routerLink="/cart">Add to Cart</button>
+  <ion-button expand="block" id="footerAnchor" class="btn fs-16 fw-700" (click)="showLoading()" (click)="dismiss()">Add to Cart</ion-button>
 </div>
