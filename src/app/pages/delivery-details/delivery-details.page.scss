@@ -37,9 +37,17 @@ ion-item{
         gap: 6px;
     }
 }
-.dot{
-    background: #FFFFFFDE;
-    width: 3px;
-    height: 7px;
-    border-radius: 50px;
+.dots{
+    gap: 8px;
+    display: grid;
+    position: absolute;
+    left: 25px;
+    top: 59px;
+    z-index: -1;
+    .dot{
+        background: #FFFFFFDE;
+        width: 3px;
+        height: 7px;
+        border-radius: 50px;
+    }
 }

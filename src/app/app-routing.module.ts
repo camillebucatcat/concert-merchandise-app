@@ -48,10 +48,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
   },
   {
-    path: 'order-details',
-    loadChildren: () => import('./pages/order-details/order-details.module').then( m => m.OrderDetailsPageModule)
-  },
-  {
     path: 'pending',
     loadChildren: () => import('./pages/pending/pending.module').then( m => m.PendingPageModule)
   },

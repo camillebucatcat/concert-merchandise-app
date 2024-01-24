@@ -9,18 +9,24 @@ import { Location } from "@angular/common";
 })
 export class PlaceOrderPage implements OnInit {
 
+  public loading: boolean = false;
   constructor(private navController: NavController,private location: Location,private loadingCtrl: LoadingController) { }
   
   back(){
     this.location.back();
   }
   async showLoading() {
+    this.loading = true;
     const loading = await this.loadingCtrl.create({
       message: 'Processing...',
-      duration: 30000,
+      duration: 2800,
       cssClass: 'loadingcss',
-      spinner: 'crescent',
-    });
+      spinner: null,
+    })
+    setTimeout(() =>{
+      this.loading = false;
+      this.navController.navigateRoot('/order-confirm')
+    },3000);
 
     loading.present();
   }
