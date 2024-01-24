@@ -21,3 +21,25 @@ ion-item{
         margin-bottom: 8px;
     }
 }
+.d-details{
+    display: flex;
+    margin-bottom: 3rem;
+    .bg-grey{
+        border-radius: 8px;
+        padding: 16px;
+        display: grid;
+        align-content: center;
+        margin-right: 1rem;
+    }
+    .text{
+        display: grid;
+        align-content: center;
+        gap: 6px;
+    }
+}
+.dot{
+    background: #FFFFFFDE;
+    width: 3px;
+    height: 7px;
+    border-radius: 50px;
+}

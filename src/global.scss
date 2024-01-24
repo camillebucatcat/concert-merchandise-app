@@ -495,12 +495,13 @@ ion-searchbar{
     font-size: 12px;
 }
 
-// modal 
+// modal
 .sheet-modal{
     --height: fit-content;
     align-items: flex-end !important;
     --background: #252525; 
     --border-radius: 32px 32px 0 0;
+
 }
 .modal{
     padding: 32px 24px;
@@ -610,3 +611,18 @@ ion-toast.custom-toast {
   ion-toast.custom-toast::part(message) {
     font-size: 14px;
   }
+
+  .loadingcss{
+    color: #fff !important;
+    --background: transparent !important;
+    --spinner-color: #DF2E38 !important;
+    font-size: $pfont;
+    font-weight: 400 !important;
+    --backdrop-color: rgba(17, 17, 17, 0.75) !important;
+}
+.loading-content.sc-ion-loading-ios{
+    font-weight: 400 !important;
+}
+.loading-wrapper.sc-ion-loading-ios{
+    display: grid !important;
+}
