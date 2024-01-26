@@ -9,6 +9,7 @@ import { CartPageRoutingModule } from './cart-routing.module';
 import { CartPage } from './cart.page';
 import { FooterTabsComponent } from 'src/app/components/footer-tabs/footer-tabs.component';
 import { FooterTabsModule } from 'src/app/components/footer-tabs/footer-tabs.module';
+import { TabsPageModule } from 'src/app/tabs/tabs.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { FooterTabsModule } from 'src/app/components/footer-tabs/footer-tabs.mod
     IonicModule,
     CartPageRoutingModule,
     FormsModule,
-    FooterTabsModule
+    FooterTabsModule,
+    TabsPageModule
   ],
   declarations: [CartPage]
 })
