@@ -73,42 +73,46 @@ $red: #DF2E38;
     src: url(./assets/fonts/Roboto/Roboto-Black.ttf);
     font-weight: 900;
   }
-.header-background{
-    backdrop-filter: none !important;
-    background: #121212 !important;
-}
-ion-header{
-    padding-top: 10px;
-    font-weight: 500 !important;
-    ion-toolbar{
-        font-family: 'Roboto', sans-serif;
-        --background: #0000;
-        color: #fff;
-        --border-style: none;
-        // padding: 10px 24px 0;
+  .header-background{
+      backdrop-filter: none !important;
     }
-}
-ion-content{
-    --ion-background-color: #0000;
-    --padding-start: 24px !important;
-    --padding-end: 24px !important;
-    --padding-top: 32px;
-}
-.logo{
-    width: 6.25rem;
-}
-.text-header{
-    font-size: $header;
-    font-weight: $bold;
-    color: $txtprimary;
-}
-.reg-text{
-    margin-top: 8px;
-    font-size: $pfont;
-    color: $pcolor;
-    line-height: $lh;
-}
-
+    ion-header{
+        padding-top: 10px;
+        font-weight: 500 !important;
+        ion-toolbar{
+            font-family: 'Roboto', sans-serif;
+            --background: #0000;
+            color: #fff;
+            --border-style: none;
+            // padding: 10px 24px 0;
+        }
+    }
+    ion-content{
+        --ion-background-color: #0000;
+        --padding-start: 24px !important;
+        --padding-end: 24px !important;
+        --padding-top: 32px;
+    }
+    .logo{
+        width: 6.25rem;
+    }
+    .text-header{
+        font-size: $header;
+        font-weight: $bold;
+        color: $txtprimary;
+    }
+    .reg-text{
+        margin-top: 8px;
+        font-size: $pfont;
+        color: $pcolor;
+        line-height: $lh;
+    }
+    
+    .ddetails{
+        .header-background{
+            background: #121212 !important;
+        }
+    }
 ion-button{
     --color: #DF2E38 !important;
     font-weight: 700;
