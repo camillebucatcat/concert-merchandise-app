@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PendingPageRoutingModule } from './pending-routing.module';
 
 import { PendingPage } from './pending.page';
+import { FooterTabsModule } from 'src/app/components/footer-tabs/footer-tabs.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PendingPageRoutingModule
+    PendingPageRoutingModule,
+    FooterTabsModule
   ],
   declarations: [PendingPage]
 })

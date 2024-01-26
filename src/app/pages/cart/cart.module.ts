@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { CartPageRoutingModule } from './cart-routing.module';
 
 import { CartPage } from './cart.page';
+import { FooterTabsComponent } from 'src/app/components/footer-tabs/footer-tabs.component';
+import { FooterTabsModule } from 'src/app/components/footer-tabs/footer-tabs.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CartPageRoutingModule
+    CartPageRoutingModule,
+    FormsModule,
+    FooterTabsModule
   ],
   declarations: [CartPage]
 })
