@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { OrderStatusPageRoutingModule } from './order-status-routing.module';
 
 import { OrderStatusPage } from './order-status.page';
-import { FooterTabsModule } from 'src/app/components/footer-tabs/footer-tabs.module';
 
 @NgModule({
   imports: [
@@ -15,7 +14,6 @@ import { FooterTabsModule } from 'src/app/components/footer-tabs/footer-tabs.mod
     FormsModule,
     IonicModule,
     OrderStatusPageRoutingModule,
-    FooterTabsModule
   ],
   declarations: [OrderStatusPage]
 })
