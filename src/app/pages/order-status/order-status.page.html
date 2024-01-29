@@ -15,7 +15,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button expand="block" class="blk-btn" routerLink="/pending">
+        <ion-button expand="block" class="blk-btn" routerLink="/tabs/pending">
           <ion-badge>2</ion-badge>
           <div>
             <img src="./assets/icon/clock-light.svg" alt="">
@@ -24,7 +24,7 @@
         </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="block" class="blk-btn" routerLink="/preparing">
+        <ion-button expand="block" class="blk-btn" routerLink="/tabs/preparing">
           <ion-badge>2</ion-badge>
           <div>
             <img src="./assets/icon/package.svg" alt="">
@@ -35,7 +35,7 @@
     </ion-row>
     <ion-row class="">
       <ion-col>
-        <ion-button expand="block" class="blk-btn" routerLink="/for-delivery">
+        <ion-button expand="block" class="blk-btn" routerLink="/tabs/for-delivery">
           <ion-badge>1</ion-badge>
           <div>
             <img src="./assets/icon/truck.svg" alt="">
@@ -44,7 +44,7 @@
         </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="block" class="blk-btn" routerLink="/received">
+        <ion-button expand="block" class="blk-btn" routerLink="/tabs/received">
           <ion-badge>4</ion-badge>
           <div>
             <img src="./assets/icon/received.svg" alt="">
@@ -54,51 +54,4 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <!-- <app-footer-tabs></app-footer-tabs> -->
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home" routerLink="/home">
-        <div class="home-tab text-grey">
-          <img src="./assets/icon/home.svg" class="">
-              <div>Home</div> 
-        </div>
-      </ion-tab-button>
-      <ion-tab-button tab="search" routerLink="/">
-        <div class="search-tab text-grey">
-          <img src="./assets/icon/search.svg" class="">
-              <div>Search</div> 
-        </div>
-      </ion-tab-button>
-      <ion-tab-button tab="cart" routerLink="/cart">
-        <div class="cart-tab text-grey">
-          <img src="./assets/icon/shopping-cart-grey.svg" class="">
-              <div>Cart</div> 
-        </div>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
 </ion-content>
-
-
-<!-- <ion-footer>
-  <div class="tabs">
-    <ion-button fill="clear" shape="block">
-      <div class="home-tab text-grey">
-        <img src="./assets/icon/home.svg" class="">
-            <div>Home</div> 
-      </div>
-    </ion-button>
-    <ion-button fill="clear" class="mr-4 ml-4" shape="block">
-      <div class="search-tab text-grey">
-        <img src="./assets/icon/search.svg" class="">
-            <div>Search</div> 
-      </div>
-    </ion-button>
-    <ion-button fill="clear" shape="block">
-      <div class="cart-tab text-grey">
-        <img src="./assets/icon/shopping-cart-grey.svg" class="">
-            <div>Cart</div> 
-      </div>
-    </ion-button>
-  </div>
-</ion-footer> -->

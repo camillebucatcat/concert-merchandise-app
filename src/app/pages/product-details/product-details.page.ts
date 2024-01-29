@@ -3,6 +3,7 @@ import { BottomSheetComponent } from 'src/app/components/bottom-sheet/bottom-she
 import { ModalController, NavController } from '@ionic/angular';
 import { Location } from "@angular/common";
 import { NgxsReadMoreModule, ReadMoreOptions } from '@minni/read-more';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.page.html',
@@ -10,7 +11,7 @@ import { NgxsReadMoreModule, ReadMoreOptions } from '@minni/read-more';
 })
 export class ProductDetailsPage implements OnInit {
 
-  constructor(private modalCtrl: ModalController,private location: Location) { }
+  constructor(private modalCtrl: ModalController,private location: Location,private router: Router) { }
   back(){
     this.location.back();
   }
@@ -41,6 +42,9 @@ export class ProductDetailsPage implements OnInit {
 public checkVisited() {
    // reverse the value of property
    this.isVisited = this.isVisited;
+}
+navigate(){
+  this.router.navigate(['/tabs/cart'])
 }
   ngOnInit() {
   }
