@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { IonTabs } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
@@ -8,12 +9,17 @@ import { Router } from '@angular/router';
 })
 export class TabsPage implements OnInit {
 
+  @ViewChild('tabs', { static: true })
+  tabs!: IonTabs;
+  public fillColor = "red"
+
   constructor(private router: Router) { }
 
-  home(){
-    this.router.navigate(['/home'])
-  }
   ngOnInit() {
+  }
+  page(page: string,event : any){
+    this.fillColor = page=="home"?"red" : "white"
+    this.tabs.select(page)
   }
 
 }

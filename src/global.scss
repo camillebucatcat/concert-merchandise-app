@@ -188,16 +188,16 @@ ion-button{
         --color: #FFFFFFDE !important;
         font-weight: 400 !important;
     }
-    &.tabs-btn{
-        --background: transparent;
-        --background-activated: transparent;
-        --color: #FFFFFF99 !important;
-        --color-activated: var(--color) !important;
+    // &.tabs-btn{
+    //     --background: transparent;
+    //     --background-activated: transparent;
+    //     --color: #FFFFFF99 !important;
+    //     --color-activated: var(--color) !important;
 
-        img:active{
-            // background-image: url(/../assets/icon/);
-        }
-    }
+    //     img:active{
+    //         // background-image: url(/../assets/icon/);
+    //     }
+    // }
 }
 
 swiper-container{
@@ -282,23 +282,36 @@ ion-segment-button{
     border-radius: 100px;
     font-weight: 400;
     
-    &.active{
-        font-weight: 700 !important;
-    }
 }
 ion-tab-bar{
     background: #1e1e1e;
     padding: 16px 0 16px 0;
 }
-ion-tab-button{
-    --background: #1e1e1e;
-    font-size: 14px;
-    color: #FFFFFF99;
-    --color-selected: #DF2E38;
-    img{
-        margin-bottom: 6px;
-    }
-}
+// ion-tab-button{
+//     --background: #1e1e1e;
+//     font-size: 14px;
+//     color: #FFFFFF99;
+    
+//     &.tab-selected{
+//         --color-selected: #DF2E38 !important;
+//         font-weight: 700 !important;
+//         color: #DF2E38 !important;
+
+//         svg{
+//             path{
+//                 &.fill{
+//                     color: #DF2E38;
+//                 }
+//                 &.stroke{
+//                     color: #DF2E38;
+//                 }
+//             }
+//         }
+//     }
+//     img{
+//         margin-bottom: 6px;
+//     }
+// }
 
 ion-badge{
     --background: #DF2E38;
@@ -357,11 +370,11 @@ ion-item{
         font-size: 14px !important;
         font-weight: 700;
     }
-    .col-btn{
-        img{
-            margin: 0.9rem !important;
-        }
-    }
+    // .col-btn{
+    //     img{
+    //         margin: 0.9rem !important;
+    //     }
+    // }
     .cart-btn{
         // border-radius: 50%;
         img{
@@ -584,12 +597,23 @@ ion-popover::part(arrow){
         border-radius: 16px 16px 0 0;
     }
     .bot{
+        align-content: space-between;
+        display: grid;
+        min-height: 173px;
         background: #1e1e1e;
         padding: 1rem;
         font-size: 1rem;
         font-weight: 700;
         color: #fff;
         border-radius: 0 0 16px 16px;
+    }
+    ion-button{
+        width: 40px !important;
+        min-height: 40px !important;
+        img{
+            margin: 0 !important;
+            width: 16px !important;
+        }
     }
 }
 .txt-overflow{

@@ -1,0 +1,15 @@
+
+ion-tab-button {
+    --background: #1e1e1e;
+    font-size: 14px;
+    color: #ffffff99;
+  
+    &.tab-selected {
+      font-weight: 700 !important;
+      color: #df2e38 !important;
+  
+      svg path {
+      stroke: #df2e38;
+      }
+    }
+  }

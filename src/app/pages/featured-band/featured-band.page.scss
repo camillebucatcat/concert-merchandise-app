@@ -56,16 +56,9 @@ ion-content{
 }
 .card{
     ion-button{
-        width: 40px !important;
-        min-height: 40px !important;
         img{
             margin: 0 !important;
             width: 16px !important;
         }
-    }
-    .bot{
-        align-content: space-between;
-        display: grid;
-        min-height: 173px;
     }
 }
