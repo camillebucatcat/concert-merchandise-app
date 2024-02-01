@@ -1,13 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>search</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content class="ion-padding">
+  <ion-header class="ion-no-border">
     <ion-toolbar>
-      <ion-title size="large">search</ion-title>
+      <div class="header">
+        <div>
+          <ion-button fill="clear" routerLink="/tabs/profile">
+            <img src="./assets/images/user.png" width="48" height="48">
+          </ion-button>
+        </div>
+        <div class="header-btns">
+          <ion-button fill="clear" style="margin-right: 16px;" routerLink="/tabs/notifications"><img src="./assets/icon/bell.svg" alt=""></ion-button>
+          <ion-button fill="clear" routerLink="/tabs/messages"><img src="./assets/icon/message.svg" alt=""></ion-button>
+        </div>
+      </div>
     </ion-toolbar>
   </ion-header>
+
+  <div class="mt-2">
+    <div class="searchbar">
+      <ion-searchbar id="custom-search" searchIcon="none" placeholder="Search shop name" clearIcon="searchinput">
+      </ion-searchbar>
+      <ion-button fill="solid" class="search btn">
+        <img src="./assets/icon/magnify.svg" alt="">
+      </ion-button>
+    </div>
+  </div>
 </ion-content>

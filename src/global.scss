@@ -657,3 +657,18 @@ ion-toast.custom-toast {
     display: grid !important;
     margin: 88px 0 0 !important;
 }
+.searchbar{
+    height: 40px !important;
+}
+ion-searchbar{
+    padding: 0 !important;
+    text-align: center;
+    --border-radius: 8px 0 0 8px !important;
+}
+.search{
+    --border-radius: 0 8px 8px 0 !important;
+    img{
+        padding: 8px;
+        margin: 0 6px;
+    }
+}
